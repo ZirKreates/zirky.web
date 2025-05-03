@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Virtual Desktop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <div id="main-window" class="window">
+        <div class="window-header" id="main-header">
+            <span><i class="fa-solid fa-house"></i></span>
+        </div>
+
+        <div class="intro">
+            <h1>hi i'm <span>mark</span></h1>
+            <p>IT teacher, web developer, data analyst</p>
+            <div class="window-body icons">
+                <div class="icon" onclick="openWindow('about')"><i class="fa-solid fa-user-secret"></i><br />about
+                </div>
+                <div class="icon" onclick="openWindow('work')"><i class="fa-solid fa-file-code"></i><br />project</div>
+                <div class="icon" onclick="openWindow('contact')"><i class="fa-solid fa-id-card"></i><br />contact</div>
+            </div>
+        </div>
+        <div class="social">
+            <a href="#" target="_blank"><span><i class="fa-brands fa-github-alt"></i></span></a>
+            <a href="#" target="_blank"><span><i class="fab fa-facebook"></i></span></a>
+            <a href="#" target="_blank"><span><i class="fa-brands fa-youtube"></i></i></span></a>
+            <a href="#" target="_blank"><span><i class="fa-solid fa-mug-hot"></i></span></a>
+        </div>
+    </div>
+
+    <div id="toolbar">
+        <button onclick="toggleTheme()">🌓 Theme</button>
+        <button onclick="toggleSound()">🔊 Sound</button>
+    </div>
+
+    <audio id="click-sound" src="click.wav" preload="auto"></audio>
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
